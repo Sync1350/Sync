@@ -10,7 +10,7 @@ let rpcName = document.getElementById("rpcName");
 let rpcDetails = document.getElementById("rpcDetails");
 
 let webSocket = new WebSocket("wss://api.lanyard.rest/socket");
-let discordID = "153490292081819648";
+let discordID = "1093810469652934748";
 
 fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
   .then((response) => response.json())
@@ -47,7 +47,7 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
     } else {
       trackName.innerText = "None";
       trackArtist.innerText = "I'm not currently listening anything";
-      document.getElementById("trackImg").src = "./template/musicDefault.png";
+      document.getElementById("trackImg").src = "musicDefault.png";
     }
 
     if (e.data["activities"].length > 0) {
@@ -60,10 +60,10 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
         //rpcState.innerText = e.data["activities"][1].state
         document.getElementById(
           "rpcIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/153490292081819648/${e.data["activities"][1].assets.large_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][1].assets.large_image}.png`;
         document.getElementById(
           "rpcSmallIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/153490292081819648/${e.data["activities"][1].assets.small_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][1].assets.small_image}.png`;
       } else {
         rpcName.innerText = e.data["activities"][0].name;
         rpcDetails.innerText =
@@ -73,19 +73,19 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
         //rpcState.innerText = e.data["activities"][0].state
         document.getElementById(
           "rpcIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/153490292081819648/${e.data["activities"][0].assets.large_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][0].assets.large_image}.png`;
         document.getElementById(
           "rpcSmallIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/153490292081819648/${e.data["activities"][0].assets.small_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][0].assets.small_image}.png`;
       }
     } else {
       rpcName.innerText = "None";
       rpcDetails.innerText = "I'm not currently playing anything";
       rpcState.innerText = "";
-      document.getElementById("rpcIcon").src = `./template/gameDefault.png`;
+      document.getElementById("rpcIcon").src = `gameDefault.png`;
       document.getElementById(
         "rpcSmallIcon"
-      ).src = `https://github.com/DGS1337/neksio/template/transparent.png`;
+      ).src = `transparent.png`;
       //document.getElementById("rpcPanel").style.display = "none";
     }
   });
@@ -128,19 +128,19 @@ webSocket.addEventListener("message", (event) => {
         rpcState.innerText = data.d["activities"][1].state;
         document.getElementById(
           "rpcIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/153490292081819648/${data.d["activities"][1].assets.large_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${data.d["activities"][1].assets.large_image}.png`;
         document.getElementById(
           "rpcSmallIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/153490292081819648/${data.d["activities"][1].assets.small_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${data.d["activities"][1].assets.small_image}.png`;
       }
     } else {
       rpcName.innerText = "None";
       rpcDetails.innerText = "I'm not currently playing anything";
       rpcState.innerText = "";
-      document.getElementById("rpcIcon").src = `./template/gameDefault.png`;
+      document.getElementById("rpcIcon").src = `gameDefault.png`;
       document.getElementById(
         "rpcSmallIcon"
-      ).src = `https://github.com/DGS1337/neksio/template/transparent.png`;
+      ).src = `transparent.png`;
       //document.getElementById("rpcPanel").style.display = "none";
     }
   }

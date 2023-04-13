@@ -1,92 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <!-- <title>neksio.wtf</title> -->
-    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1037832033310879744/1093524507165208638/ace.png" />
-    <meta name="description" content="Sync" />
-    <meta name="keywords" content="Sync" />
-    <meta content="sync1350.github.io/Sync/" property="og:title" />
-    <meta content="🦇" property="og:description" />
-    <meta content="sync1350.github.io/Sync/" property="og:url" />
-    <meta
-      content="https://cdn.discordapp.com/attachments/1037832033310879744/1093524507165208638/ace.png"
-      property="og:image"
-    />
-    <meta content="#2b2d31" data-react-helmet="true" name="theme-color" />
-  </head>
-  <body>
-    <div id="container">
-      <div class="clockContainer">
-        <div class="clockTimezone"></div>
-        <div class="clock"></div>
-      </div>
-      <div class="center">
-        <p class="nameMain">
-          Hello, I'm <span id="nameNeksio" class="nameNeksio">$ync</span>
-          <span id="wave">👋</span>
-        </p>
-        <p class="smallerMain">
-          Hey im $ync a dev in Python🐍, Java, C#, Lua, and HTML. I dont know what else to put here.
-        </p>
-        <div class="gap"></div>
-        <div class="panel discordPanel">
-          <i class="discord fa-brands fa-discord"></i>
-          <div class="statusCircle" id="statusCircle"></div>
-          <a id="avatarLink" target="_blank" href=""
-            ><img
-              class="discordAvatar"
-              id="discordAvatar"
-              src="https://cdn.discordapp.com/attachments/1037832033310879744/1093524507165208638/ace.png"
-          /></a>
-          <p class="discordName" id="discordName"></p>
-          <p class="discordMotd" id="discordMotd"></p>
-    </div>
-    <div class="gap"></div>
-    <div class="panel spotifyPanel">
-      <i class="spotify fa-brands fa-spotify"></i>
-      <a id="trackLink" target="_blank" href=""
-        ><img class="trackImg" id="trackImg" src="./template/musicDefault.png"
-      /></a>
-      <p class="trackName" id="trackName">Nothing</p>
-      <p class="trackArtist" id="trackArtist">
-        I'm not currently listening anything
-      </p>
-    </div>
-    <div class="gap"></div>
-    <div id="rpcPanel" class="panel rpcPanel">
-      <i class="game fa-solid fa-gamepad"></i>
-      <img
-        class="rpcSmallIcon"
-        id="rpcSmallIcon"
-        src="./template/transparent.png"
-      />
-      <img class="rpcIcon" id="rpcIcon" src="./template/gameDefault.png" />
-      <p class="rpcName" id="rpcName">Nothing</p>
-      <p class="rpcDetails" id="rpcDetails">
-        I'm not currently playing anything
-      </p>
-    </div>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   
+   <title>jupert.xyz</title>
+   <link rel="icon" type="image/x-icon" href="avatar.png">
+   
+   <meta name="description" content="Jupert" />
+   <meta
+      name="keywords"
+      content="neksio"/>
 
-    <script src="./script/websocket.js"></script>
-    <script src="./script/title.js"></script>
-    <script>
-      const gradients = [
-        "#004ef7, #0084ff",
-        "#ff8400, #ffc900",
-        "#660acf, #ac00cf",
-      ]; /*"#00c2ff, #8400ff"*/
-      const chosenGradient =
-        gradients[Math.floor(Math.random() * gradients.length)];
+   <meta content="sync1350.github.io/Sync/" property="og:title" />
+   <meta content="♠️" property="og:description" />
+   <meta content="sync1350.github.io/Sync/" property="og:url" />
+   <meta content="https://sync1350.github.io/Sync/avatar.png" property="og:image">
+   <meta content="#2b2d31" data-react-helmet="true" name="theme-color" />
+</head>
+<body>
+   <div id="container">
+   <div class="clockContainer">
+      <div class="clockTimezone"></div>
+      <div class="clock"></div>
+   </div>
+   <div class="center">
+      <p class="nameMain">Hello, I'm <span id="nameNeksio" class="nameNeksio">$ync</span> <span id="wave">♠️</span></p>
+      <p class="smallerMain">Hello. I can code in Python, Java, HTML and CSS.
+      </p>
+   <div class="panel discordPanel">
+      <i class="discord fa-brands fa-discord"></i>
+      <div class="statusCircle" id="statusCircle"></div>
+      <a id="avatarLink" target="_blank" href=""><img class="discordAvatar" id="discordAvatar" src="transparent.png"></a>
+      <p class="discordName" id="discordName"></p>
+      <p class="discordMotd" id="discordMotd"></p>
+   </div>
+   <div class="gap"></div>
+   <div id="rpcPanel" class="panel rpcPanel">  
+      <i class="game fa-solid fa-gamepad"></i>
+      <img class="rpcSmallIcon" id="rpcSmallIcon" src="transparent.png">
+      <img class="rpcIcon" id="rpcIcon" src="gameDefault.png">
+      <p class="rpcName" id="rpcName">Astral SB</p>
+      <p class="rpcDetails" id="rpcDetails">ACE Selfbot. Coming Soon!</p>
+   </div>
+   <div class="gap"></div>
+      <div class="panel spotifyPanel">
+      <i class="spotify fa-brands fa-spotify"></i>
+      <a id="trackLink" target="_blank" href=""><img class="trackImg" id="trackImg" src="musicDefault.png"></a>
+      <p class="trackName" id="trackName">Nothing</p>
+      <p class="trackArtist" id="trackArtist">I'm not listening anything</p>
+   </div> 
+   </div>
+   </div>
+   <script src="websocket.js"></script>
+   <script>
+      const gradients = ["#004ef7, #0084ff", "#ff8400, #ffc900", "#660acf, #ac00cf"]; /*"#00c2ff, #8400ff"*/
+      const chosenGradient = gradients[Math.floor(Math.random() * gradients.length)];
       const nameNeksio = document.getElementById("nameNeksio");
       nameNeksio.style.backgroundImage = `linear-gradient(to right, ${chosenGradient})`;
-    </script>
-  </body>
+   </script>
+</body>
 </html>

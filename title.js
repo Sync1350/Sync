@@ -1,6 +1,6 @@
 var rev = "fwd";
 function titlebar(val) {
-  var msg = "DouG#1999";
+  var msg = "$ync#9247";
   var res = " ";
   var speed = 600;
   var pos = val;

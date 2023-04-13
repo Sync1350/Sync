@@ -60,10 +60,10 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
         //rpcState.innerText = e.data["activities"][1].state
         document.getElementById(
           "rpcIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][1].assets.large_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/${e.data["activities"][1].assets.large_image}.png`;
         document.getElementById(
           "rpcSmallIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][1].assets.small_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/${e.data["activities"][1].assets.small_image}.png`;
       } else {
         rpcName.innerText = e.data["activities"][0].name;
         rpcDetails.innerText =
@@ -73,10 +73,10 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
         //rpcState.innerText = e.data["activities"][0].state
         document.getElementById(
           "rpcIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][0].assets.large_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/${e.data["activities"][0].assets.large_image}.png`;
         document.getElementById(
           "rpcSmallIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${e.data["activities"][0].assets.small_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/${e.data["activities"][0].assets.small_image}.png`;
       }
     } else {
       rpcName.innerText = "None";
@@ -128,10 +128,10 @@ webSocket.addEventListener("message", (event) => {
         rpcState.innerText = data.d["activities"][1].state;
         document.getElementById(
           "rpcIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${data.d["activities"][1].assets.large_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/${data.d["activities"][1].assets.large_image}.png`;
         document.getElementById(
           "rpcSmallIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/1093810469652934748/${data.d["activities"][1].assets.small_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/${data.d["activities"][1].assets.small_image}.png`;
       }
     } else {
       rpcName.innerText = "None";

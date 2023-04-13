@@ -128,10 +128,10 @@ webSocket.addEventListener("message", (event) => {
         rpcState.innerText = data.d["activities"][1].state;
         document.getElementById(
           "rpcIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/${data.d["activities"][1].assets.large_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/383226320970055681/${data.d["activities"][1].assets.large_image}.png`;
         document.getElementById(
           "rpcSmallIcon"
-        ).src = `https://cdn.discordapp.com/app-assets/${data.d["activities"][1].assets.small_image}.png`;
+        ).src = `https://cdn.discordapp.com/app-assets/383226320970055681/${data.d["activities"][1].assets.small_image}.png`;
       }
     } else {
       rpcName.innerText = "None";
